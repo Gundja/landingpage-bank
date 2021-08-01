@@ -1,16 +1,55 @@
-html,
-body {
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  outline: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  font-size: 92.4%;
+}
+
+*,
+button,
+input {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --tertiary-white: #f9f9f9;
+  --unnamed-color-ffffff: #ffffff;
+
+  --unnamed-color-f97270: #f97270;
+  --unnamed-color-707070: #707070;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 
-* {
-  box-sizing: border-box;
+ul li {
+  list-style: none;
 }
